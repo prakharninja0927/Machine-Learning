@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>hello</title>
+    <style>
+        .button,.score {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+        }
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+
+        .container {
+            padding-top: 100px;
+        }
+        #score{
+            background-color: dimgray;
+            color:white;
+            padding:4px 60px;
+            border-radius:10px
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 style="text-align:center">Student Percentage Predictor</h1>
+        <div class="score mt-5">
+            <h1 id="score">Your Predicted score is {{score_per}}%</h1>
+        </div>
+        <form style="margin-top:30px" method="GET" action="/">
+            <div class="button">
+                <button type="submit" class="btn btn-success">Go Back</button>
+            </div>
+        </form>
+        <div class="text-center" style="margin-top: 100px;">
+        © 2020 Copyright:
+        <a class="text-primary" href="#">Prakhar Patel</a>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!-- Example to attach JS images or CSS file -->
+    <!-- <script type="text/javascript" src="{{ url_for('static', filename='JS/index.js') }}"></script> -->
+</body>
+
+</html>
